@@ -18,11 +18,7 @@ export default function RootLayout({ children }) {
 
       <body className={`${montserrat.className} background `}>
         <nav>
-          <img
-            src="https://www.freepnglogos.com/uploads/film-reel-png/film-reel-the-movies-owens-valley-12.png"
-            alt="logo"
-            className="logo"
-          />
+          <img src="\logo.png" alt="logo" className="logo" />
         </nav>
         {children}
       </body>
