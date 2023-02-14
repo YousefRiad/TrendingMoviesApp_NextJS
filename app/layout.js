@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
 
       <body className={`${montserrat.className} background `}>
         <nav>
-          <img src="\logo.png" alt="logo" className="logo" />
+          <img src="\logoo.png" alt="logo" className="logo" />
         </nav>
         {children}
       </body>
