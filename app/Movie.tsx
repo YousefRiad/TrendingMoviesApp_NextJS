@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Movie = ({ title, id, poster_path, release_date }) => {
+
+
+const Movie = ({ title, id, poster_path, release_date}) => {
   const imagePath = "https://image.tmdb.org/t/p/original";
   return (
     <div>
