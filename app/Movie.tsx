@@ -16,6 +16,7 @@ const Movie = ({ title, id, poster_path, release_date}) => {
           width={1000}
           height={1000}
           alt={title}
+          priority
         />
       </Link>
     </div>

@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Montserrat } from "@next/font/google";
+import Head from "./head";
 
 const montserrat = Montserrat({
   weight: ["400", "700"],
@@ -16,11 +17,13 @@ export default function RootLayout({ children }) {
       */}
       <head />
 
-      <body className={`${montserrat.className} background `}>
+      <body className={`${montserrat.className} background`}>
+        <div>
         <nav>
           <img src="\logoo.png" alt="logo" className="logo" />
         </nav>
         {children}
+        </div>
       </body>
     </html>
   );
