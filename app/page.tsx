@@ -21,7 +21,7 @@ async function getData(): Promise<Movie[]> {
   console.log("*****************")
   const response = await res.json()
   console.log(response);
-  return response;
+  return response.results;
 }
 
 export default async function Home() {
@@ -30,7 +30,7 @@ export default async function Home() {
     <main>
       <h1>MovieLand</h1>
       <div className="grid gap-16 grid-cols-fluid">
-        {data['results'].map((movie) => (
+        {data.map((movie) => (
           <Movie
             key={movie.id}
             id={movie.id}
