@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Montserrat } from "@next/font/google";
 import Head from "./head";
+import Link from "next/link";
 
 const montserrat = Montserrat({
   weight: ["400", "700"],
@@ -20,7 +21,9 @@ export default function RootLayout({ children }) {
       <body className={`${montserrat.className} background`}>
         <div>
         <nav>
-          <img src="\logoo.png" alt="logo" className="logo" />
+          <a href="https://movieland-mu.vercel.app/">
+          <img src="\logoo.png" alt="logo" className="logo"/>
+          </a>
         </nav>
         {children}
         </div>

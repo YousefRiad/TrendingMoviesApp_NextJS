@@ -1,6 +1,6 @@
 import Image from "next/image";
 
- export async function generateStaticParams() {
+ /*export async function generateStaticParams() {
    const data = await fetch(
      `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}`
    );
@@ -8,7 +8,7 @@ import Image from "next/image";
    return res.results.map((movie) => ({
      movie: movie.id.toString(),
    }));
- }
+ }*/
 
 export default async function MovieDetail({ params }) {
   const { movie } = params;
